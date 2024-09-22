@@ -15,7 +15,7 @@ function App() {
         <div className="card">
 
             <p style={{ maxWidth: '400px'}}>
-            Press the button below to change the memoized component props from the parent component.
+            Press the count button below to change the memoized component props from the parent component.
             Since the props changed, the memoized component will rerender.
             </p>
             
@@ -24,7 +24,7 @@ function App() {
             </ button>
 
             <p style={{ maxWidth: '400px '}}> 
-                Press the count button below to change the parent component state. The child component which is not wrapped in memo wil rerender, 
+                Press the count button below to change the parent component state. The child component which is not wrapped in memo will rerender, 
                 while the child component which is wrapped in memo will not
             </p>
             <button onClick={() => setCount((count) => count + 1)}>
